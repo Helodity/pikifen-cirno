@@ -1,0 +1,93 @@
+vertexes{
+	v=-384.0000 -384.0000
+	v=384.0000 -384.0000
+	v=384.0000 384.0000
+	v=-384.0000 384.0000
+	v=-448.0000 -448.0000
+	v=448.0000 -448.0000
+	v=448.0000 448.0000
+	v=-448.0000 448.0000
+	v=-512.0000 -512.0000
+	v=512.0000 -512.0000
+	v=512.0000 512.0000
+	v=-512.0000 512.0000
+}
+edges{
+	e{
+		s=1 0
+		v=3 0
+	}
+	e{
+		s=1 0
+		v=0 1
+	}
+	e{
+		s=1 0
+		v=1 2
+	}
+	e{
+		s=1 0
+		v=2 3
+	}
+	e{
+		s=2 1
+		v=7 4
+	}
+	e{
+		s=2 1
+		v=4 5
+	}
+	e{
+		s=2 1
+		v=5 6
+	}
+	e{
+		s=2 1
+		v=6 7
+	}
+	e{
+		s=-1 2
+		v=11 8
+	}
+	e{
+		s=-1 2
+		v=8 9
+	}
+	e{
+		s=-1 2
+		v=9 10
+	}
+	e{
+		s=-1 2
+		v=10 11
+	}
+}
+sectors{
+	s{
+		z=0.0000
+		texture=textures/grass_dark
+	}
+	s{
+		z=200.0000
+		texture=textures/stone_2
+	}
+	s{
+		z=200.0000
+		fade=true
+		texture=textures/grass_dark
+	}
+}
+mobs{
+	leader{
+		type=louie
+		p=-256.0000 256.0000
+	}
+	custom{
+		type=projectile_spawner
+		p=0.0000 0.0000
+		vars=spawn_rate=0.3000;turn_amt=0.0000
+	}
+}
+path_stops
+tree_shadows
+regions

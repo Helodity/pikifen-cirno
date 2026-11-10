@@ -1,0 +1,48 @@
+first_state = idling
+
+init {
+    set_var turn_amount 0
+    set_var homing_delay 1
+}
+
+global {
+    on_tick {
+        get_misc_info t delta_t
+        calculate homing_delay homing_delay - $t
+    }
+    on_touch_wall {
+        delete
+    }
+}
+
+script {
+    idling {
+        on_enter {
+            set_timer $homing_delay
+            set_animation idling
+            move_to_relative 1000 0
+        }
+        on_timer {
+            set_state homing
+        }
+    }
+    homing {
+        on_enter {
+            get_misc_info target player_1_leader_id
+            focus_on_id $target
+            //TODO: replace with turn_to_target focused_mob_position when that gets added
+            //turn_to_target focused_mob_position
+            get_mob_info cx self x
+            get_mob_info cy self y
+            get_mob_info tx focus x
+            get_mob_info ty focus y
+            get_angle a $cx $cy $tx $ty
+            turn_to_absolute $a
+
+        }
+        on_tick {
+            move_to_relative 100 0
+        }
+
+    }
+}

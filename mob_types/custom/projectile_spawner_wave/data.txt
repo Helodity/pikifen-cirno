@@ -1,0 +1,32 @@
+name = Cirno Projectile Spawner (Wave)
+description = Debug item for testing cirno status effect
+
+can_hurt = player; fragile
+custom_category_name = Obstacle, dangerous
+height = 64
+max_health = 200
+acceleration = 800
+rotation_speed = 120
+move_speed = 140
+acceleration = 800
+pushable = false
+pushes = false
+radius = 12
+target_type = explodable
+inactive_logic = all_logic
+can_free_move = true
+
+
+spawns {
+    projectile {
+        object = cirno_projectile
+        relative = true
+        coordinates = 16 0 0
+        angle = 0
+    }
+}
+
+
+maker = Helodity
+version = 1.0.0
+engine_version = 1.0.0

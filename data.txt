@@ -1,0 +1,9 @@
+name=Cirno
+description=Its cirno
+maker=Helodity, Neo
+version=1.0.0
+engine_version=1.2.0
+tags=
+dependencies=
+conflicts=
+notes=

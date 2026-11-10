@@ -1,0 +1,9 @@
+name = Cirno Ice
+description = Cirno's ice attacks. Pikmin hit by them are slowed and eventually frozen.
+
+color = 12 192 192
+effects = cirno_ice_stage_1; cirno_ice_stage_2; cirno_ice_stage_3;
+
+maker = Espyo
+version = 1.0.0
+engine_version = 1.2.0

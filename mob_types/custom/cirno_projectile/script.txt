@@ -1,0 +1,40 @@
+first_state = idling
+
+init {
+    set_var randomize_turn_rate false
+    set_var turn_amount 0
+    set_var turn_delay 1
+}
+ready {
+    if $randomize_turn_rate = true
+        calculate turn_lower $turn_amount * -1
+        get_random_float turn_amount $turn_lower $turn_amount
+    end_if
+}
+global {
+    on_tick {
+        get_misc_info t delta_t
+        calculate turn_delay $turn_delay - $t
+    }
+
+}
+
+script {
+    idling {
+        on_enter {
+            set_timer 0.1
+            set_animation idling
+            move_to_relative 100 0
+        }
+        on_timer {
+            if $turn_delay <= 0
+                turn_to_relative $turn_amount
+            end_if
+            move_to_relative 100 0
+            set_timer 0.1
+        }
+        on_touch_wall {
+            delete
+        }
+    }
+}

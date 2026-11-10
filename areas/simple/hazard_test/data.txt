@@ -1,0 +1,18 @@
+name=Hazard testin
+engine_version=1.2.0
+subtitle
+difficulty=0
+bg_angle=0.0000
+bg_bmp
+bg_color=0 0 0
+bg_dist=2.0000
+bg_offset=0.0000 0.0000
+bg_scale=1.0000 1.0000
+bg_tint=255 255 255
+song
+boss_song
+boss_victory_song
+weather
+day_time_start=420
+day_time_speed=120.0000
+spray_amounts

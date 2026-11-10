@@ -1,0 +1,25 @@
+name = Cirno Slowed (1)
+description = Pikmin hit by Cirno's attack are first slowed, then killed if hit additional times.
+
+affects = pikmin
+anim_speed_multiplier = 0.8
+auto_remove_time = 10
+color = 16 16 192
+colorize = 0 0 255 128
+particle_generator = ice_vapor
+particle_offset = 0 0 300
+particle_scale_reaches = true
+particle_scale_sizes = true
+reapply_rule = keep_time
+speed_multiplier = 0.8
+
+sound_start {
+    sound = nature/frozen_mob
+    type = gameplay_pos
+    speed = 120
+    speed_deviation = 10
+}
+
+maker = Helodity
+version = 1.0.0
+engine_version = 1.2.0

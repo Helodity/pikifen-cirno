@@ -1,0 +1,28 @@
+first_state = idling
+
+init {
+    set_var spawn_rate 0.3
+    set_var turn_amt 0
+}
+
+script {
+    idling {
+        on_enter {
+            set_animation idling
+            start_particles ice_projectile
+            set_timer $spawn_rate
+        }
+        on_timer {
+            spawn projectile_1
+            spawn projectile_2
+            spawn projectile_3
+            spawn projectile_4
+            spawn projectile_5
+            spawn projectile_6
+            spawn projectile_7
+            spawn projectile_8
+            turn_to_relative $turn_amt
+            set_timer $spawn_rate
+        }
+    }
+}

@@ -1,0 +1,36 @@
+name=Fire geyser animations
+description=Animations for the fire geyser.
+maker=Espyo
+version=1.0.0
+engine_version=1.2.0
+animations{
+	idling{
+		frames{
+			idling{
+				duration=0.1000
+			}
+		}
+	}
+}
+sprites{
+	idling{
+		file=projectiles/ice_blue
+		file_pos=0.0000 0.0000
+		file_size=48.0000 24.0000
+		scale=0.5000 0.5000
+		hitboxes{
+			hit{
+				coords=0.0000 0.0000 0.0000
+				height=23.0000
+				radius=1.0000
+				type=1
+				value=10.0000
+				hazard=cirno_ice
+				knockback_type=0
+			}
+		}
+	}
+}
+body_parts{
+	hit
+}

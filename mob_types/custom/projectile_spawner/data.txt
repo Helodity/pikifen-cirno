@@ -1,0 +1,96 @@
+name = Cirno Projectile Spawner (8 Dir)
+description = Debug item for testing cirno status effect
+
+can_hurt = player; fragile
+custom_category_name = Obstacle, dangerous
+height = 64
+max_health = 200
+acceleration = 800
+rotation_speed = 2000
+acceleration = 800
+pushable = false
+pushes = false
+radius = 12
+target_type = explodable
+inactive_logic = all_logic
+can_free_move = true
+
+
+area_editor_properties {
+	Turn Speed {
+		var = turn_amt
+		type = float
+		def_value = 0
+		tooltip = The amount the spawner should turn between spawns. Loops every 45 degrees.
+	}
+	Spawn speed {
+		var = spawn_rate
+		type = float
+		def_value = 0.3
+		tooltip = How often the spawner spawns a set of 8 projectiles
+	}
+}
+
+spawns {
+    projectile_1 {
+        object = cirno_projectile_homing
+        relative = true
+        coordinates = 0 0 0
+        angle = 0
+        vars = turn_amount = 4; randomize_turn_rate = true;
+    }
+    projectile_2 {
+        object = cirno_projectile
+        relative = true
+        coordinates = 0 0 0
+        angle = 45
+        vars = turn_amount = 4; randomize_turn_rate = true;
+    }
+    projectile_3 {
+        object = cirno_projectile
+        relative = true
+        coordinates = 0 0 0
+        angle = 90
+        vars = turn_amount = 4; randomize_turn_rate = true;
+    }
+    projectile_4 {
+        object = cirno_projectile
+        relative = true
+        coordinates = 0 0 0
+        angle = 135
+        vars = turn_amount = 4; randomize_turn_rate = true;
+    }
+    projectile_5 {
+        object = cirno_projectile
+        relative = true
+        coordinates = 0 0 0
+        angle = 180
+        vars = turn_amount = 4; randomize_turn_rate = true;
+    }
+    projectile_6 {
+        object = cirno_projectile
+        relative = true
+        coordinates = 0 0 0
+        angle = 225
+        vars = turn_amount = 4; randomize_turn_rate = true;
+    }
+    projectile_7 {
+        object = cirno_projectile
+        relative = true
+        coordinates = 0 0 0
+        angle = 270
+        vars = turn_amount = 4; randomize_turn_rate = true;
+    }
+    projectile_8 {
+        object = cirno_projectile
+        relative = true
+        coordinates = 0 0 0
+        angle = 315
+        vars = turn_amount = 4; randomize_turn_rate = true;
+    }
+}
+
+
+maker = Helodity
+version = 1.0.0
+engine_version = 1.0.0
