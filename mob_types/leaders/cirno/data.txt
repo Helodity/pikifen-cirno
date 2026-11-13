@@ -1,15 +1,11 @@
-name = Olimar
-description = A veteran freight worker from Hocotate. Works hard and has a knack for science.
+name = Cirno
+description = The strongest fairy
 
-acceleration = 5000
+acceleration = 500
 can_walk_on_others = true
 height = 46
-icon = leaders/olimar_icon
-light = effects/flare
-light_color = 255 192 192
-light_particle_color = 255 80 80
-light_particle_generator = leader_light
-main_color = 221 17 17
+icon = leaders/cirno_icon
+main_color = 112 122 255
 max_carriers = 5
 max_health = 100
 max_throw_height = 130
