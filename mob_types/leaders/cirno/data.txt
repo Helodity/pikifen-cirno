@@ -1,5 +1,5 @@
 name = Cirno
-description = The strongest fairy
+description = THE Strongest Fairy
 
 acceleration = 500
 can_walk_on_others = true
@@ -84,6 +84,6 @@ vulnerabilities {
     water = 0
 }
 
-maker = Espyo
+maker = Helodity
 version = 1.0.0
-engine_version = 1.0.0
+engine_version = 1.2.0

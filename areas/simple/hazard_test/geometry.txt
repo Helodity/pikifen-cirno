@@ -83,14 +83,9 @@ mobs{
 		p=-256.0000 256.0000
 	}
 	custom{
-		type=projectile_spawner
-		p=0.0000 0.0000
+		type=projectile_spawner_wave
+		p=32.0000 -96.0000
 		vars=spawn_rate=0.3000;turn_amt=0.0000
-	}
-	leader{
-		type=cirno
-		p=-192.0000 256.0000
-		vars=health=0.0000
 	}
 }
 path_stops
