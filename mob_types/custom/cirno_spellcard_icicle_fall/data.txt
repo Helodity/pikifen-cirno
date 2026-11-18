@@ -32,7 +32,7 @@ spawns {
         coordinates = 0 -25 0
         angle = -85
         link_object_to_spawn = true
-        vars = turn_once = true; turn_delay = 2.3; icicle_fall_setup = true; icicle_fall_speed = 1;
+        vars = turn_once = true; turn_delay = 1.8; icicle_fall_setup = true; icicle_fall_speed = 1;
     }
     projectile_l2 {
         object = cirno_projectile
@@ -40,7 +40,7 @@ spawns {
         coordinates = 0 -25 0
         angle = -85
         link_object_to_spawn = true
-        vars = turn_once = true; turn_delay = 2.3; icicle_fall_setup = true; icicle_fall_speed = 2;
+        vars = turn_once = true; turn_delay = 1.8; icicle_fall_setup = true; icicle_fall_speed = 2;
     }
     projectile_l3 {
         object = cirno_projectile
@@ -48,7 +48,7 @@ spawns {
         coordinates = 0 -25 0
         angle = -85
         link_object_to_spawn = true
-        vars = turn_once = true; turn_delay = 2.3; icicle_fall_setup = true; icicle_fall_speed = 3;
+        vars = turn_once = true; turn_delay = 1.8; icicle_fall_setup = true; icicle_fall_speed = 3;
     }
 
     projectile_r1 {
@@ -57,7 +57,7 @@ spawns {
         coordinates = 0 25 0
         angle = 85
         link_object_to_spawn = true
-        vars = turn_once = true; turn_delay = 2.3; icicle_fall_setup = true; icicle_fall_speed = 1; icicle_fall_invert_turn = true;
+        vars = turn_once = true; turn_delay = 1.8; icicle_fall_setup = true; icicle_fall_speed = 1; icicle_fall_invert_turn = true;
     }
     projectile_r2 {
         object = cirno_projectile
@@ -65,7 +65,7 @@ spawns {
         coordinates = 0 25 0
         angle = 85
         link_object_to_spawn = true
-        vars = turn_once = true; turn_delay = 2.3; icicle_fall_setup = true; icicle_fall_speed = 2; icicle_fall_invert_turn = true;
+        vars = turn_once = true; turn_delay = 1.8; icicle_fall_setup = true; icicle_fall_speed = 2; icicle_fall_invert_turn = true;
     }
     projectile_r3 {
         object = cirno_projectile
@@ -73,7 +73,7 @@ spawns {
         coordinates = 0 25 0
         angle = 85
         link_object_to_spawn = true
-        vars = turn_once = true; turn_delay = 2.3; icicle_fall_setup = true; icicle_fall_speed = 3; icicle_fall_invert_turn = true;
+        vars = turn_once = true; turn_delay = 1.8; icicle_fall_setup = true; icicle_fall_speed = 3; icicle_fall_invert_turn = true;
     }
 }
 

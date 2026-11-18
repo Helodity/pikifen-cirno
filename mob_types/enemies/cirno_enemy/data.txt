@@ -31,6 +31,12 @@ spawns {
 
 }
 
+vulnerabilities {
+    explosion = 25
+    ice_pikmin = 0
+    ice = 0
+}
+
 maker = Helodity
 version = 1.2.0
 engine_version = 1.0.0

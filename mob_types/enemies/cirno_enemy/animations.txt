@@ -5,7 +5,16 @@ version=1.1.0
 engine_version=1.2.0
 animations{
 	attacking{
+		loop_frame=2
 		frames{
+			idling{
+				duration=0.1000
+				interpolate=true
+			}
+			ducking{
+				duration=0.2000
+				interpolate=true
+			}
 			wind-up_01{
 				duration=0.1000
 				interpolate=true
@@ -65,7 +74,7 @@ animations{
 				interpolate=true
 			}
 			ko_05{
-				duration=0.1000
+				duration=0.5000
 			}
 		}
 	}

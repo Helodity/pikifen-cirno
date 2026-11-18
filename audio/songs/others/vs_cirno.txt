@@ -1,0 +1,10 @@
+name = Versus Cirno
+description = Boss Music for Cirno
+
+tags = Combat; Energetic; Specific
+maker = Helodity
+version = 1.0.0
+engine_version = 1.2.0
+notes = This song is a remix of Foolish Tomboy from Touhou EoSD
+
+main_track = others/vs_cirno
