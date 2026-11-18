@@ -1,0 +1,13 @@
+===== Bugs ====
+- Projectiles right when the spell card ends do not have their speeds set right, noticable when cirno re attacks
+
+
+==== TODO ====
+- SFX: is using game assets fine? They work well but It'd be cool if everything was made by someone working on the project
+
+Enemy Cirno
+	- Add other spellcards
+	- Have her move
+	- Add sfx
+	- Sync with boss music? (would be cool!!!)
+	- like everything else.
