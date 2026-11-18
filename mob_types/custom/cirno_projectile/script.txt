@@ -1,8 +1,19 @@
 first_state = idling
 
+// "Wow, isn't this a LOT for just some generic projectile?"
+// Yes, but this is meant to be a fully programmable projectile, to use for whatever a specified spellcard requires.
+// Each property is defaulted in "init", and is described there.
+
 init {
+    // TURNING
+
+    // If true, turn_amount is randomized to [-turn_amount, turn_amount] on spawn.
     set_var randomize_turn_rate false
+    // If true, only turns once turn_delay time has elapsed, otherwise, turns 10x degrees/sec
+    set_var turn_once false
+    // Turn rate, or amount if "turn_once" is true
     set_var turn_amount 0
+    // How long until turning begins
     set_var turn_delay 1
 }
 ready {
@@ -16,7 +27,6 @@ global {
         get_misc_info t delta_t
         calculate turn_delay $turn_delay - $t
     }
-
 }
 
 script {
@@ -28,7 +38,14 @@ script {
         }
         on_timer {
             if $turn_delay <= 0
-                turn_to_relative $turn_amount
+                if $turn_once = true
+                    if $turned != true
+                        turn_to_relative $turn_amount
+                    end_if
+                    set_var turned true
+                else
+                    turn_to_relative $turn_amount
+                end_if
             end_if
             move_to_relative 100 0
             set_timer 0.1

@@ -80,11 +80,12 @@ sectors{
 mobs{
 	leader{
 		type=cirno
-		p=0.0000 0.0000
+		p=0.0000 192.0000
+		angle=4.7124
 	}
-	leader{
-		type=louie
-		p=-224.0000 64.0000
+	custom{
+		type=cirno_spellcard_icicle_fall
+		p=0.0000 -160.0000
 	}
 }
 path_stops

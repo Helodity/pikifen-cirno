@@ -1,0 +1,10 @@
+name = Cirno Projectile Speed (4 / 5)
+description =
+
+affects = enemies; leaders; pikmin; others
+color = 255 255 255
+speed_multiplier = 1.5
+
+maker = Helodity
+version = 1.0.0
+engine_version = 1.2.0
