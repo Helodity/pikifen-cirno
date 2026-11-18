@@ -1,16 +1,15 @@
 first_state = idling
 
 init {
-    set_var spawn_rate 0.35
+    set_var spawn_rate 0.55
     set_var turn_amt 90
 }
 
 script {
     idling {
         on_enter {
-            set_animation idling
-            start_particles ice_projectile
-            set_timer 3
+            set_timer 1
+            set_shadow_visibility false
         }
         on_timer {
             spawn projectile_l1

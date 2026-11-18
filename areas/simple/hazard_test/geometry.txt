@@ -83,9 +83,10 @@ mobs{
 		p=0.0000 192.0000
 		angle=4.7124
 	}
-	custom{
-		type=cirno_spellcard_icicle_fall
+	enemy{
+		type=cirno_enemy
 		p=0.0000 -160.0000
+		angle=1.5583
 	}
 }
 path_stops

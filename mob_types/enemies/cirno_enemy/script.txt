@@ -1,0 +1,41 @@
+first_state = idling
+death_state = dying
+
+script {
+    idling {
+        on_enter {
+            set_timer 2
+            set_animation idling
+        }
+        on_timer {
+            set_state attacking
+        }
+    }
+
+    attacking {
+        on_enter {
+            set_animation attacking
+            spawn icicle_fall
+            set_timer 15
+        }
+        on_timer {
+            set_state idling
+        }
+        on_leave {
+            run_next_action_as link
+            delete
+        }
+
+    }
+
+    dying {
+        on_enter {
+            start_dying
+            set_animation ko
+        }
+        on_animation_end {
+            finish_dying
+        }
+    }
+
+}
