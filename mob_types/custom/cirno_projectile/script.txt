@@ -1,4 +1,5 @@
 first_state = idling
+death_state = dying
 
 // "Wow, isn't this a LOT for just some generic projectile?"
 // Yes, but this is meant to be a fully programmable projectile, to use for whatever a specified spellcard requires.
@@ -51,6 +52,11 @@ script {
             set_timer 0.1
         }
         on_touch_wall {
+            delete
+        }
+    }
+    dying {
+        on_enter {
             delete
         }
     }

@@ -34,6 +34,14 @@ sprites{
 				hazard=cirno_ice
 				knockback_type=0
 			}
+			body{
+				coords=0.0000 0.0000 0.0000
+				height=64.0000
+				radius=25.0000
+				type=0
+				value=1.0000
+				surface_type=0
+			}
 		}
 	}
 	idling_hidden{
@@ -51,9 +59,18 @@ sprites{
 				hazard=cirno_ice
 				knockback_type=0
 			}
+			body{
+				coords=0.0000 0.0000 0.0000
+				height=64.0000
+				radius=25.0000
+				type=0
+				value=1.0000
+				surface_type=0
+			}
 		}
 	}
 }
 body_parts{
 	hit
+	body
 }

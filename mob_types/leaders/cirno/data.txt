@@ -19,7 +19,7 @@ weight = 1
 
 sounds {
     dismissing {
-        sound = leaders/olimar_dismiss
+        sound = leaders/cirno_dismiss
     }
     drinking {
         sound = misc/slurp_straw
@@ -27,10 +27,10 @@ sounds {
         speed_deviation = 10
     }
     name_call {
-        sound = leaders/olimar_name_call
+        sound = leaders/cirno_name_call
     }
     whistling {
-        sound = leaders/olimar_whistle
+        sound = leaders/cirno_whistle
     }
     footstep_1 {
         sound = leaders/footstep_1
@@ -71,6 +71,10 @@ sounds {
     woosh {
         sound = effects/woosh
         volume = 30
+    }
+    ko {
+        sound = leaders/cirno_die
+        volume = 80
     }
 }
 

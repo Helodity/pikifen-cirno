@@ -169,6 +169,7 @@ animations{
 			ducking{
 				duration=0.2000
 				interpolate=true
+				sound=ko
 			}
 			ko_01{
 				duration=0.2000

@@ -152,15 +152,27 @@ mobs{
 	}
 	tool{
 		type=bomb_rock
-		p=0.0000 352.0000
+		p=0.0000 320.0000
+	}
+	tool{
+		type=bomb_rock
+		p=-32.0000 320.0000
 	}
 	tool{
 		type=bomb_rock
 		p=32.0000 320.0000
 	}
-	tool{
-		type=bomb_rock
-		p=-32.0000 320.0000
+	pikmin{
+		type=red_pikmin
+		p=0.0000 288.0000
+	}
+	pikmin{
+		type=red_pikmin
+		p=32.0000 288.0000
+	}
+	pikmin{
+		type=red_pikmin
+		p=-32.0000 288.0000
 	}
 }
 path_stops
